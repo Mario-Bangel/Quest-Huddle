@@ -1,0 +1,143 @@
+html {
+    font-size: 62.5%;
+    /* para poder utilizar o rem da melhor forma(1 rem = 10px) */
+  }
+   
+  body {
+    background: url(../images/bg-desktop.svg) no-repeat center center fixed;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: aliceblue;
+  }
+  
+  .cabecalho { 
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 90px;
+  }
+  
+  .main .container {
+    display: flex;
+    justify-content: center;
+  }
+  .main .container .imagem {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+  }
+  .main .container .info{
+      max-width: 770px;
+      padding: 30px;
+  }
+  .main .container .info .titulo {
+      max-width: 550px;
+  }
+  .main .info .titulo {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+  }
+  
+  .main .info .texto {
+    margin-bottom: 55px;
+  }
+  
+  .main .info .btn {
+    color: hsl(257, 40%, 49%);
+    border: solid 1px #000;
+    background-color: aliceblue;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 13px 87px;
+  }
+  
+  .main .info .btn:hover {
+    color: aliceblue;
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+  }
+  
+  .footer nav {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-bottom: 100px;
+  }
+  .footer nav a {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+  }
+  .footer nav a:hover {
+    color: hsl(300, 69%, 71%);
+    border: solid 2px hsl(300, 69%, 71%);
+  }
+
+  @media (max-width: 375px) {
+    body {
+      background: url(../images/bg-mobile.svg)no-repeat center center fixed;
+      background-size: cover;
+      background-color: hsl(257, 40%, 49%);
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 2.5rem;
+      color: aliceblue;
+    }
+
+    .cabecalho {
+      margin-left: 30px;
+    }
+
+    .cabecalho img {
+      width: 50%;
+      height: 50%;
+    }
+
+
+    .main .container {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .main .container .imagem {
+      max-width: 350px;
+      margin-top: -70px;
+    }
+
+    .main .container .info .titulo {
+      font-size: 2.8rem ;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .main .container .info .texto {
+      font-size: 1.67rem;
+      font-weight: 400;
+      text-align: center;
+    }
+    .main .container .info .btn {
+      padding: 7px 116px;
+      font-size: 1.7rem;
+    }
+
+
+    .footer nav {
+      font-size: 1.7rem;
+      margin-top: 35px;
+    }
+    .footer nav a {
+      width: 50px;
+      height: 50px;
+    }
+  }
